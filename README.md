@@ -27,6 +27,8 @@ For local development, set `OPENAI_API_KEY` in the Xcode scheme environment or p
 OPENAI_API_KEY=your_key_here xcodebuild -project Translate.xcodeproj -scheme Translate -destination 'platform=iOS Simulator,name=iPhone 17' build
 ```
 
+For Xcode Cloud/TestFlight builds, add `OPENAI_API_KEY` as a secret environment variable on the workflow. `Translate/Resources/Info.plist` reads that build setting with `$(OPENAI_API_KEY)`, and the app reads `OPENAI_API_KEY` from the bundle at runtime.
+
 For production, use a backend proxy so the OpenAI API key is never shipped in the iOS app bundle.
 
 ## Google Cloud Speech-to-Text V2

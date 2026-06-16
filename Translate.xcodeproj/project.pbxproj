@@ -44,6 +44,7 @@
 		F80A9F892D61000100A7C001 /* LiveTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTranslator.swift; sourceTree = "<group>"; };
 		F80A9F8C2D61000100A7C001 /* TranslationSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationSpeaker.swift; sourceTree = "<group>"; };
 		F80A9F8E2D61000100A7C001 /* RecordingFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingFramework.swift; sourceTree = "<group>"; };
+		F80A9F902D61000100A7C001 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -97,6 +98,7 @@
 			isa = PBXGroup;
 			children = (
 				F80A9F5A2D61000100A7C001 /* Assets.xcassets */,
+				F80A9F902D61000100A7C001 /* Info.plist */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -431,17 +433,8 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4DKKR75KL5;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Smart Translate AI";
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Translate needs microphone access to record your voice.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Translate uses speech recognition to turn your voice into text.";
-				INFOPLIST_KEY_OPENAI_API_KEY = "$(OPENAI_API_KEY)";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Translate/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -471,17 +464,8 @@
 				DEVELOPMENT_ASSET_PATHS = "";
 				DEVELOPMENT_TEAM = 4DKKR75KL5;
 				ENABLE_PREVIEWS = YES;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_KEY_CFBundleDisplayName = "Smart Translate AI";
-				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
-				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
-				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Translate needs microphone access to record your voice.";
-				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Translate uses speech recognition to turn your voice into text.";
-				INFOPLIST_KEY_OPENAI_API_KEY = "$(OPENAI_API_KEY)";
-				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
-				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
-				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				GENERATE_INFOPLIST_FILE = NO;
+				INFOPLIST_FILE = Translate/Resources/Info.plist;
 				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
