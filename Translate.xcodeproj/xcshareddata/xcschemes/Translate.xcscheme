@@ -1,0 +1,106 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<Scheme
+   LastUpgradeVersion = "2650"
+   version = "1.3">
+   <BuildAction
+      parallelizeBuildables = "YES"
+      buildImplicitDependencies = "YES"
+      buildArchitectures = "Automatic">
+      <BuildActionEntries>
+         <BuildActionEntry
+            buildForTesting = "YES"
+            buildForRunning = "YES"
+            buildForProfiling = "YES"
+            buildForArchiving = "YES"
+            buildForAnalyzing = "YES">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F80A9F4B2D61000100A7C001"
+               BuildableName = "Translate.app"
+               BlueprintName = "Translate"
+               ReferencedContainer = "container:Translate.xcodeproj">
+            </BuildableReference>
+         </BuildActionEntry>
+      </BuildActionEntries>
+   </BuildAction>
+   <TestAction
+      buildConfiguration = "Debug"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      shouldUseLaunchSchemeArgsEnv = "YES">
+      <Testables>
+         <TestableReference
+            skipped = "NO">
+            <BuildableReference
+               BuildableIdentifier = "primary"
+               BlueprintIdentifier = "F80A9F6A2D61000100A7C001"
+               BuildableName = "TranslateTests.xctest"
+               BlueprintName = "TranslateTests"
+               ReferencedContainer = "container:Translate.xcodeproj">
+            </BuildableReference>
+         </TestableReference>
+      </Testables>
+   </TestAction>
+   <LaunchAction
+      buildConfiguration = "Release"
+      selectedDebuggerIdentifier = "Xcode.DebuggerFoundation.Debugger.LLDB"
+      selectedLauncherIdentifier = "Xcode.DebuggerFoundation.Launcher.LLDB"
+      launchStyle = "0"
+      useCustomWorkingDirectory = "NO"
+      ignoresPersistentStateOnLaunch = "NO"
+      debugDocumentVersioning = "YES"
+      debugServiceExtension = "internal"
+      allowLocationSimulation = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F80A9F4B2D61000100A7C001"
+            BuildableName = "Translate.app"
+            BlueprintName = "Translate"
+            ReferencedContainer = "container:Translate.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+      <EnvironmentVariables>
+         <EnvironmentVariable
+            key = "OPENAI_API_KEY"
+            value = "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"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "GOOGLE_CLOUD_ACCESS_TOKEN"
+            value = "ya29.a0AT3oNZ-PQvgK3826K2R9PyD0YPrJ80_khkjSM4f_Vg6orQ3hK1SZ-dlcWX9XFUf40xJE4Q0_1bBdPAfGVS-is8vLMLHKRSBP3cNkUsjm71KXNs61llyCM6TV78R6a_JmA_nEnan3GrnsFSrd3Dxx2J0BXAeSWO8SV2yXCb19P7AIRG5OTayZZBT3Ywsupb40LsF7Rnqa1jZCaCgYKASUSARYSFQHGX2Miryclhts-txWHEPNIFUOBhA0211"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+         <EnvironmentVariable
+            key = "GOOGLE_CLOUD_PROJECT_ID"
+            value = "translate-498805"
+            isEnabled = "YES">
+         </EnvironmentVariable>
+      </EnvironmentVariables>
+   </LaunchAction>
+   <ProfileAction
+      buildConfiguration = "Release"
+      shouldUseLaunchSchemeArgsEnv = "YES"
+      savedToolIdentifier = ""
+      useCustomWorkingDirectory = "NO"
+      debugDocumentVersioning = "YES">
+      <BuildableProductRunnable
+         runnableDebuggingMode = "0">
+         <BuildableReference
+            BuildableIdentifier = "primary"
+            BlueprintIdentifier = "F80A9F4B2D61000100A7C001"
+            BuildableName = "Translate.app"
+            BlueprintName = "Translate"
+            ReferencedContainer = "container:Translate.xcodeproj">
+         </BuildableReference>
+      </BuildableProductRunnable>
+   </ProfileAction>
+   <AnalyzeAction
+      buildConfiguration = "Debug">
+   </AnalyzeAction>
+   <ArchiveAction
+      buildConfiguration = "Release"
+      revealArchiveInOrganizer = "YES">
+   </ArchiveAction>
+</Scheme>

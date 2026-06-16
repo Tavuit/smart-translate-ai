@@ -1,0 +1,582 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		F80A9F512D61000100A7C001 /* TranslateApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F502D61000100A7C001 /* TranslateApp.swift */; };
+		F80A9F552D61000100A7C001 /* RootView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F542D61000100A7C001 /* RootView.swift */; };
+		F80A9F572D61000100A7C001 /* ConversationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F562D61000100A7C001 /* ConversationView.swift */; };
+		F80A9F5B2D61000100A7C001 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = F80A9F5A2D61000100A7C001 /* Assets.xcassets */; };
+		F80A9F6E2D61000100A7C001 /* TranslateTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F6D2D61000100A7C001 /* TranslateTests.swift */; };
+		F80A9F812D61000100A7C001 /* OpenAIClient.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F802D61000100A7C001 /* OpenAIClient.swift */; };
+		F80A9F852D61000100A7C001 /* SpeechTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F842D61000100A7C001 /* SpeechTranscriber.swift */; };
+		F80A9F882D61000100A7C001 /* OpenAIFileTranscriber.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F872D61000100A7C001 /* OpenAIFileTranscriber.swift */; };
+		F80A9F8A2D61000100A7C001 /* LiveTranslator.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F892D61000100A7C001 /* LiveTranslator.swift */; };
+		F80A9F8D2D61000100A7C001 /* TranslationSpeaker.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F8C2D61000100A7C001 /* TranslationSpeaker.swift */; };
+		F80A9F8F2D61000100A7C001 /* RecordingFramework.swift in Sources */ = {isa = PBXBuildFile; fileRef = F80A9F8E2D61000100A7C001 /* RecordingFramework.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		F80A9F6B2D61000100A7C001 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = F80A9F442D61000100A7C001 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = F80A9F4B2D61000100A7C001;
+			remoteInfo = Translate;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		F80A9F4C2D61000100A7C001 /* Smart Translate AI.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = "Smart Translate AI.app"; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80A9F502D61000100A7C001 /* TranslateApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateApp.swift; sourceTree = "<group>"; };
+		F80A9F542D61000100A7C001 /* RootView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RootView.swift; sourceTree = "<group>"; };
+		F80A9F562D61000100A7C001 /* ConversationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConversationView.swift; sourceTree = "<group>"; };
+		F80A9F5A2D61000100A7C001 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		F80A9F6C2D61000100A7C001 /* TranslateTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TranslateTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		F80A9F6D2D61000100A7C001 /* TranslateTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslateTests.swift; sourceTree = "<group>"; };
+		F80A9F802D61000100A7C001 /* OpenAIClient.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIClient.swift; sourceTree = "<group>"; };
+		F80A9F842D61000100A7C001 /* SpeechTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SpeechTranscriber.swift; sourceTree = "<group>"; };
+		F80A9F872D61000100A7C001 /* OpenAIFileTranscriber.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenAIFileTranscriber.swift; sourceTree = "<group>"; };
+		F80A9F892D61000100A7C001 /* LiveTranslator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LiveTranslator.swift; sourceTree = "<group>"; };
+		F80A9F8C2D61000100A7C001 /* TranslationSpeaker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TranslationSpeaker.swift; sourceTree = "<group>"; };
+		F80A9F8E2D61000100A7C001 /* RecordingFramework.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RecordingFramework.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		F80A9F492D61000100A7C001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80A9F682D61000100A7C001 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		F80A9F432D61000100A7C001 = {
+			isa = PBXGroup;
+			children = (
+				F80A9F4F2D61000100A7C001 /* Translate */,
+				F80A9F6F2D61000100A7C001 /* TranslateTests */,
+				F80A9F4D2D61000100A7C001 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		F80A9F4D2D61000100A7C001 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F4C2D61000100A7C001 /* Smart Translate AI.app */,
+				F80A9F6C2D61000100A7C001 /* TranslateTests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		F80A9F4F2D61000100A7C001 /* Translate */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F602D61000100A7C001 /* App */,
+				F80A9F612D61000100A7C001 /* Features */,
+				F80A9F822D61000100A7C001 /* Services */,
+				F80A9F5F2D61000100A7C001 /* Resources */,
+			);
+			path = Translate;
+			sourceTree = "<group>";
+		};
+		F80A9F5F2D61000100A7C001 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F5A2D61000100A7C001 /* Assets.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		F80A9F602D61000100A7C001 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F502D61000100A7C001 /* TranslateApp.swift */,
+				F80A9F542D61000100A7C001 /* RootView.swift */,
+			);
+			path = App;
+			sourceTree = "<group>";
+		};
+		F80A9F612D61000100A7C001 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F622D61000100A7C001 /* Chat */,
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		F80A9F622D61000100A7C001 /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F562D61000100A7C001 /* ConversationView.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		F80A9F6F2D61000100A7C001 /* TranslateTests */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F6D2D61000100A7C001 /* TranslateTests.swift */,
+			);
+			path = TranslateTests;
+			sourceTree = "<group>";
+		};
+		F80A9F822D61000100A7C001 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F832D61000100A7C001 /* OpenAI */,
+				F80A9F862D61000100A7C001 /* Speech */,
+				F80A9F8B2D61000100A7C001 /* Translation */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		F80A9F832D61000100A7C001 /* OpenAI */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F802D61000100A7C001 /* OpenAIClient.swift */,
+			);
+			path = OpenAI;
+			sourceTree = "<group>";
+		};
+		F80A9F862D61000100A7C001 /* Speech */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F872D61000100A7C001 /* OpenAIFileTranscriber.swift */,
+				F80A9F8E2D61000100A7C001 /* RecordingFramework.swift */,
+				F80A9F842D61000100A7C001 /* SpeechTranscriber.swift */,
+				F80A9F8C2D61000100A7C001 /* TranslationSpeaker.swift */,
+			);
+			path = Speech;
+			sourceTree = "<group>";
+		};
+		F80A9F8B2D61000100A7C001 /* Translation */ = {
+			isa = PBXGroup;
+			children = (
+				F80A9F892D61000100A7C001 /* LiveTranslator.swift */,
+			);
+			path = Translation;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		F80A9F4B2D61000100A7C001 /* Translate */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80A9F7A2D61000100A7C001 /* Build configuration list for PBXNativeTarget "Translate" */;
+			buildPhases = (
+				F80A9F482D61000100A7C001 /* Sources */,
+				F80A9F492D61000100A7C001 /* Frameworks */,
+				F80A9F4A2D61000100A7C001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Translate;
+			productName = Translate;
+			productReference = F80A9F4C2D61000100A7C001 /* Smart Translate AI.app */;
+			productType = "com.apple.product-type.application";
+		};
+		F80A9F6A2D61000100A7C001 /* TranslateTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = F80A9F7D2D61000100A7C001 /* Build configuration list for PBXNativeTarget "TranslateTests" */;
+			buildPhases = (
+				F80A9F672D61000100A7C001 /* Sources */,
+				F80A9F682D61000100A7C001 /* Frameworks */,
+				F80A9F692D61000100A7C001 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				F80A9F6D2D61000100A7C002 /* PBXTargetDependency */,
+			);
+			name = TranslateTests;
+			productName = TranslateTests;
+			productReference = F80A9F6C2D61000100A7C001 /* TranslateTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		F80A9F442D61000100A7C001 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 2630;
+				LastUpgradeCheck = 2650;
+				TargetAttributes = {
+					F80A9F4B2D61000100A7C001 = {
+						CreatedOnToolsVersion = 26.3;
+					};
+					F80A9F6A2D61000100A7C001 = {
+						CreatedOnToolsVersion = 26.3;
+						TestTargetID = F80A9F4B2D61000100A7C001;
+					};
+				};
+			};
+			buildConfigurationList = F80A9F472D61000100A7C001 /* Build configuration list for PBXProject "Translate" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = F80A9F432D61000100A7C001;
+			productRefGroup = F80A9F4D2D61000100A7C001 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				F80A9F4B2D61000100A7C001 /* Translate */,
+				F80A9F6A2D61000100A7C001 /* TranslateTests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		F80A9F4A2D61000100A7C001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80A9F5B2D61000100A7C001 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80A9F692D61000100A7C001 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		F80A9F482D61000100A7C001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80A9F512D61000100A7C001 /* TranslateApp.swift in Sources */,
+				F80A9F552D61000100A7C001 /* RootView.swift in Sources */,
+				F80A9F572D61000100A7C001 /* ConversationView.swift in Sources */,
+				F80A9F812D61000100A7C001 /* OpenAIClient.swift in Sources */,
+				F80A9F852D61000100A7C001 /* SpeechTranscriber.swift in Sources */,
+				F80A9F882D61000100A7C001 /* OpenAIFileTranscriber.swift in Sources */,
+				F80A9F8A2D61000100A7C001 /* LiveTranslator.swift in Sources */,
+				F80A9F8D2D61000100A7C001 /* TranslationSpeaker.swift in Sources */,
+				F80A9F8F2D61000100A7C001 /* RecordingFramework.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		F80A9F672D61000100A7C001 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				F80A9F6E2D61000100A7C001 /* TranslateTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		F80A9F6D2D61000100A7C002 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = F80A9F4B2D61000100A7C001 /* Translate */;
+			targetProxy = F80A9F6B2D61000100A7C001 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin XCBuildConfiguration section */
+		F80A9F782D61000100A7C001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		F80A9F792D61000100A7C001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				STRING_CATALOG_GENERATE_SYMBOLS = YES;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		F80A9F7B2D61000100A7C001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4DKKR75KL5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Smart Translate AI";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Translate needs microphone access to record your voice.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Translate uses speech recognition to turn your voice into text.";
+				INFOPLIST_KEY_OPENAI_API_KEY = "$(OPENAI_API_KEY)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tavuit.ai-translate";
+				PRODUCT_NAME = "Smart Translate AI";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Debug;
+		};
+		F80A9F7C2D61000100A7C001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				ASSETCATALOG_COMPILER_INCLUDE_ALL_APPICON_ASSETS = YES;
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 2;
+				DEVELOPMENT_ASSET_PATHS = "";
+				DEVELOPMENT_TEAM = 4DKKR75KL5;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_KEY_CFBundleDisplayName = "Smart Translate AI";
+				INFOPLIST_KEY_ITSAppUsesNonExemptEncryption = NO;
+				INFOPLIST_KEY_LSApplicationCategoryType = "public.app-category.productivity";
+				INFOPLIST_KEY_NSMicrophoneUsageDescription = "Translate needs microphone access to record your voice.";
+				INFOPLIST_KEY_NSSpeechRecognitionUsageDescription = "Translate uses speech recognition to turn your voice into text.";
+				INFOPLIST_KEY_OPENAI_API_KEY = "$(OPENAI_API_KEY)";
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.1;
+				PRODUCT_BUNDLE_IDENTIFIER = "com.tavuit.ai-translate";
+				PRODUCT_NAME = "Smart Translate AI";
+				SUPPORTED_PLATFORMS = "iphoneos iphonesimulator";
+				SUPPORTS_MACCATALYST = NO;
+				SUPPORTS_MAC_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SUPPORTS_XR_DESIGNED_FOR_IPHONE_IPAD = NO;
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = 1;
+			};
+			name = Release;
+		};
+		F80A9F7E2D61000100A7C001 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XXUMJDWL5C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tavuit.TranslateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Translate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Translate";
+			};
+			name = Debug;
+		};
+		F80A9F7F2D61000100A7C001 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_TEAM = XXUMJDWL5C;
+				GENERATE_INFOPLIST_FILE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.tavuit.TranslateTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Translate.app/$(BUNDLE_EXECUTABLE_FOLDER_PATH)/Translate";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		F80A9F472D61000100A7C001 /* Build configuration list for PBXProject "Translate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80A9F782D61000100A7C001 /* Debug */,
+				F80A9F792D61000100A7C001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F80A9F7A2D61000100A7C001 /* Build configuration list for PBXNativeTarget "Translate" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80A9F7B2D61000100A7C001 /* Debug */,
+				F80A9F7C2D61000100A7C001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		F80A9F7D2D61000100A7C001 /* Build configuration list for PBXNativeTarget "TranslateTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				F80A9F7E2D61000100A7C001 /* Debug */,
+				F80A9F7F2D61000100A7C001 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = F80A9F442D61000100A7C001 /* Project object */;
+}
