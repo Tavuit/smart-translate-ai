@@ -61,23 +61,6 @@
             ReferencedContainer = "container:Translate.xcodeproj">
          </BuildableReference>
       </BuildableProductRunnable>
-      <EnvironmentVariables>
-         <EnvironmentVariable
-            key = "OPENAI_API_KEY"
-            value = "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"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "GOOGLE_CLOUD_ACCESS_TOKEN"
-            value = "ya29.a0AT3oNZ-PQvgK3826K2R9PyD0YPrJ80_khkjSM4f_Vg6orQ3hK1SZ-dlcWX9XFUf40xJE4Q0_1bBdPAfGVS-is8vLMLHKRSBP3cNkUsjm71KXNs61llyCM6TV78R6a_JmA_nEnan3GrnsFSrd3Dxx2J0BXAeSWO8SV2yXCb19P7AIRG5OTayZZBT3Ywsupb40LsF7Rnqa1jZCaCgYKASUSARYSFQHGX2Miryclhts-txWHEPNIFUOBhA0211"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-         <EnvironmentVariable
-            key = "GOOGLE_CLOUD_PROJECT_ID"
-            value = "translate-498805"
-            isEnabled = "YES">
-         </EnvironmentVariable>
-      </EnvironmentVariables>
    </LaunchAction>
    <ProfileAction
       buildConfiguration = "Release"
